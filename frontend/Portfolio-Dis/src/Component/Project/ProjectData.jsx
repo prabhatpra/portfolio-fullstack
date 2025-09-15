@@ -1,6 +1,6 @@
 // src/components/Project/ProjectData.jsx
 import Project1 from "../../assets/Project/Project1.png"
-import Project2 from "../../assets/Project/project2.png"
+import Project2 from "../../assets/Project/Project2.png"
 import Project3 from "../../assets/Project/Project3.png"
 export const demoProjects = [
   {
