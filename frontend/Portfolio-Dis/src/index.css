@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animate-3d-spin {
+        animation: spin3d 6s linear infinite;
+        transform-style: preserve-3d;
+        perspective: 800px;
+    }
+
+    @keyframes spin3d {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+}
+
+.bg-radial-blink {
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.2), transparent 70%);
+}
+
+
+/* Hide scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
