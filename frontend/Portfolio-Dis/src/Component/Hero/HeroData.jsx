@@ -92,24 +92,24 @@ export const profileWithImages = {
       "📸 Explore my latest posts.",
     ],
     img: Intsta,
-    link: "https://www.https://www.instagram.com/prabhatprajapati_01/.com/yourusername",
+    link: "https://www.instagram.com/prabhatprajapati_01/",
   },
   facebook: {
     title: "Facebook Profile",
     lines: ["Connect with me on Facebook!"],
     img: Facebook,
-    link: "https://www.facebook.com/yourusername",
+    link: "https://www.facebook.com/prabhatprajapati.prajapati.18",
   },
   linkedin: {
     title: "LinkedIn Profile",
     lines: ["Connect professionally on LinkedIn!"],
     img: Linkedin,
-    link: "https://www.linkedin.com/in/yourusername",
+    link: "https://www.linkedin.com/in/prabhat-prajapati-01p6/",
   },
   github: {
     title: "GitHub Profile",
     lines: ["Check out my projects on GitHub!"],
     img: Github,
-    link: "https://github.com/yourusername",
+    link: "https://github.com/prabhatpra",
   },
 };

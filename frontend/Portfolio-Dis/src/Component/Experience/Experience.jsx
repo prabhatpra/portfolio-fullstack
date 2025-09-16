@@ -190,7 +190,7 @@ function Experience() {
   const selected = items.find((it) => it.id === selectedId) || items[0] || null;
 
   return (
-    <section
+    <section id="experience"
   className="
     min-h-screen py-16 px-4 md:px-12 lg:px-20
     bg-gradient-to-br 
