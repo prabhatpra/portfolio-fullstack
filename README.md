@@ -51,6 +51,7 @@ frontend/Portfolio-Dis/
 │── postcss.config.js      # PostCSS config
 │── README.md              # Documentation
 
+---
 
 ## 💻 Project Setup
 
@@ -58,13 +59,14 @@ cd frontend/Portfolio-Dis
 npm install
 npm run dev
 
-
+---
 🚀 Deployment
 
 This project is deployed using Vercel for easy hosting.
 You can access the live version here:
-🔗 Portfolio-Dis-prabhatpra-vercel. Live
+🔗 [portfolio-dis-prabhatpra-vercel](https://portfolio-dis-prabhatpra.vercel.app/). Live
 
+---
 
 👤 Author
 
