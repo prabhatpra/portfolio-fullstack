@@ -3,75 +3,75 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer
-      className="
-        relative w-full
-        bg-gradient-to-tr from-blue-50/90 via-cyan-200/70 to-purple-100/70
-        dark:from-gray-900/80 dark:via-purple-900/60 dark:to-indigo-800/70
-        text-gray-800 dark:text-gray-100
-        py-8 px-4 sm:px-8
-        shadow-lg
-        transition-colors duration-700
-      "
-    >
-      {/* Main Flex Container */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-        {/* Left Side: Copyright */}
-        <div className="text-sm sm:text-base text-center sm:text-left">
-          © {new Date().getFullYear()} Prabhat Prajapati. All rights reserved.
+    <footer className="bg-gradient-to-tr from-blue-50 via-cyan-100 to-purple-100 dark:from-gray-900 dark:via-purple-900 dark:to-indigo-800 text-gray-800 dark:text-gray-100">
+      
+      {/* Main Container */}
+      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-0">
+        
+        {/* Left: Branding / Copyright */}
+        <div className="flex-1 text-center sm:text-center md:text-left">
+          <h1 className="text-xl sm:text-2xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500">
+            Prabhat Prajapati
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+            © {new Date().getFullYear()} All rights reserved.
+          </p>
         </div>
 
         {/* Middle: Contact Info */}
-        <div className="text-center space-y-1 text-sm sm:text-base">
-          <p>
+        <div className="flex-1 text-center space-y-2">
+          <p className="text-sm sm:text-base">
             Email:{" "}
             <a
-              href="mailto:prabhat@example.com"
+              href="mailto:prabhatprajapati01@gmail.com"
               className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 font-semibold hover:underline"
             >
-              prabhat@example.com
+              prabhatprajapati01@gmail.com
             </a>
           </p>
-          <p>
+          <p className="text-sm sm:text-base">
             Phone:{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 font-semibold">
-              +91 1234567890
+              +91 8409363297
             </span>
           </p>
         </div>
 
-        {/* Right Side: Social Links */}
-        <div className="flex gap-6 text-2xl">
+        {/* Right: Social Icons */}
+        <div className="flex-1 flex justify-center sm:justify-center md:justify-end gap-6 text-2xl sm:text-2xl md:text-3xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/prabhatpra"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-all transform hover:scale-110"
+            className="p-3 bg-white/30 dark:bg-gray-800/50 rounded-full hover:bg-white dark:hover:bg-gray-700 transition-transform transform hover:scale-110"
           >
-            <FaGithub />
+            <FaGithub className="text-gray-800 dark:text-gray-100" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/prabhat-prajapati-01p6/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-blue-500 transition-all transform hover:scale-110"
+            className="p-3 bg-white/30 dark:bg-gray-800/50 rounded-full hover:bg-white dark:hover:bg-gray-700 transition-transform transform hover:scale-110"
           >
-            <FaLinkedin />
+            <FaLinkedin className="text-blue-600 dark:text-blue-400" />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-cyan-500 transition-all transform hover:scale-110"
+            className="p-3 bg-white/30 dark:bg-gray-800/50 rounded-full hover:bg-white dark:hover:bg-gray-700 transition-transform transform hover:scale-110"
           >
-            <FaTwitter />
+            <FaTwitter className="text-cyan-500 dark:text-cyan-400" />
           </a>
         </div>
       </div>
 
-      {/* Bottom Note: Full Width */}
-      <div className="mt-6 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400 w-full">
-        Designed & built by{" "}
+      {/* Divider */}
+      <div className="border-t border-gray-300 dark:border-gray-700 mx-6 md:mx-12"></div>
+
+      {/* Bottom Section */}
+      <div className="text-center py-4 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        Designed & built with ❤️ by{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 font-semibold">
           Prabhat Prajapati
         </span>

@@ -27,7 +27,7 @@ const Projects = () => {
     onSwipedLeft: handleNext,
     onSwipedRight: handlePrev,
     preventScrollOnSwipe: true,
-    trackMouse: true, // desktop par bhi swipe jaisa effect
+    trackMouse: true, 
   });
 
   return (

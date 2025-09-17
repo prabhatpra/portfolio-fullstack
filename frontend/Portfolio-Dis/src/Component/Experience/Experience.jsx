@@ -191,6 +191,7 @@ function Experience() {
 
   return (
     <section
+    id="experience"
   className="
     min-h-screen py-16 px-4 md:px-12 lg:px-20
     bg-gradient-to-br 
