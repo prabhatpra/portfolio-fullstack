@@ -45,7 +45,7 @@ const Navbar = () => {
   className={`shadow-md
     relative mx-auto
     ${scrolled
-      ? "w-1/2 h-12 rounded-lg bg-transparent backdrop-blur-md"
+      ? "w-1/2  h-12 rounded-lg bg-transparent backdrop-blur-md"
       : "w-full h-14 bg-gradient-to-br from-blue-50 via-cyan-200 to-purple-100 dark:from-gray-900 dark:via-purple-900 dark:to-indigo-800"}
     transition-all duration-300`}
 >
@@ -76,7 +76,7 @@ const Navbar = () => {
             </a>
 
             {/* Mobile Menu Toggle */}
-            <div className="md:hidden absolute right-4 top-4 z-50">
+            <div className="md:hidden absolute right-4 top-4 z-[9999]">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle Menu"
@@ -97,7 +97,7 @@ const Navbar = () => {
                   className="absolute top-16 right-4 bg-gradient-to-br
                              from-blue-50/90 via-cyan-200/70 to-purple-100/90
                              dark:from-gray-900/80 dark:via-purple-900/60 dark:to-indigo-800/80
-                             text-gray-800 dark:text-gray-200 rounded-lg shadow-md p-2 space-y-2 w-48 z-40 md:hidden origin-top-right backdrop-blur-sm"
+                             text-gray-800 dark:text-gray-200 rounded-lg shadow-md p-2 space-y-2 w-48 z-[9999] md:hidden origin-top-right backdrop-blur-sm"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
