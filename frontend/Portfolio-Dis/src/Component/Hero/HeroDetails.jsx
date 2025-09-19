@@ -12,19 +12,19 @@ const HeroDetails = () => {
     if (!container || !content) return;
 
     let scrollPos = 0;
-    const speed = 0.5; // pixels per frame
+    const speed = 0.5; 
 
-    // Total scroll distance = height of content + container
+   
     const totalScroll = content.offsetHeight + container.offsetHeight;
 
     const step = () => {
       scrollPos += speed;
 
       if (scrollPos >= totalScroll) {
-        scrollPos = 0; // reset to start
+        scrollPos = 0; 
       }
 
-      // Move the whole content block
+      
       content.style.transform = `translateY(${container.offsetHeight - scrollPos}px)`;
 
       requestAnimationFrame(step);
