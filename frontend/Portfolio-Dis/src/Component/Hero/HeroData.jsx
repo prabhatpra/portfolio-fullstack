@@ -16,26 +16,31 @@ export const roles = [
 
 // Scrolling description
 export const scrollingDetails = `
-Java Developer Intern
-HulkHire Tech
-02/2025 - Present, Hyderabad, India
-Designed and developed Stripe Integration using Java Spring Boot and Microservices.
-Conducted Stripe Integration document analysis, finalizing end-to-end integration approaches with the team.
-Built a Stripe-provider service that integrates with Stripe APIs to create, retrieve, and expire sessions.
-Developed a Payment Status Tracking system to ensure 100% reliability of payments.
-Integrated Stripe APIs using Stripe Auth Security Mechanism and implemented HmacSHA256 for secure notification processing.
-Developed multiple error codes to handle system failures and implemented effective error handling with Spring Exception Handling.
-Applied Factory Pattern, Builder Pattern, and OOP principles for designing modular applications.
-Worked with MySQL using Spring JDBC for database operations.
-Gained hands-on experience with AWS services like EC2, RDS, and AWS Secret Manager.
-Contact : Mr. Tausief Shaikh - tausiefs@hulkhiretech.com
 
-Travel and Tourism Management System
-(08/2023 - 02/2024)
-Developed a comprehensive Travel and Tourism Management Desktop application using Java, Swing, AWT, and JDBC with MySQL.
-This application offers a secure user login system to ensure data protection and provides an intuitive dashboard for efficiently managing bookings and customer information.
-The system streamlines data retrieval and updates, enhancing overall user experience.
+🌟 Hi, I'm Prabhat Prajapati — a passionate Java & Full Stack Developer 🚀  
+
+💻 I have built this portfolio using **React + Vite + Tailwind CSS**, focusing on 
+modern design, performance, and responsiveness.  
+
+🔑 My expertise lies in building **secure, scalable, and production-ready 
+applications** using Java, Spring Boot, Microservices, MySQL, and React.  
+
+✅ I have completed my internship at **HulkHire Tech**, where I learned industry-level 
+development practices, team collaboration, and advanced integration techniques.  
+
+⚡ Some of my key projects include:  
+- 🔒 **Authentication Service** – Role-based authentication, authorization, hashing, global exception handling, JDBC-MySQL.  
+- 📂 **Project Management Service** – Secure project storage & frontend showcase, with user project upload & feedback features.  
+- 🌍 **Travel & Tourism Management System** – A Java desktop app for bookings with secure login and intuitive dashboard.  
+
+📌 I actively update my GitHub with new features and improvements, reflecting my 
+continuous learning journey. Until I secure a role in the industry, I will keep 
+building **real-world projects**, learning new technologies, and polishing my skills.  
+
+🎯 My goal is simple: **to deliver value, write clean and scalable code, and grow 
+as a developer while contributing to impactful projects.**
 `
+
   .split("\n")
   .map((line) => line.trim())
   .filter((line) => line);

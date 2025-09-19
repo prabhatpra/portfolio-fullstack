@@ -101,7 +101,7 @@ export function FilterTabs({ active, onChange }) {
           className={`px-4 py-2 rounded-full text-sm font-medium transition-shadow focus:outline-none focus:ring-2 focus:ring-sky-300 ${
             active === f
               ? "bg-sky-600 text-white shadow-md"
-              : "bg-white/60 dark:bg-gray-800/60"
+              : "bg-white bg-opacity-60 dark:bg-gray-800 dark:bg-opacity-60"
           }`}
         >
           {f}
@@ -192,14 +192,7 @@ function Experience() {
   return (
     <section
     id="experience"
-  className="
-    min-h-screen py-16 px-4 md:px-12 lg:px-20
-    bg-gradient-to-br 
-    from-blue-50 via-cyan-200 to-purple-100/70       /* Light Mode */
-    dark:from-gray-900/80 dark:via-purple-900/60 dark:to-indigo-800/70 /* Dark Mode */
-    transition-colors duration-700
-  "
->
+    className="min-h-screen py-16 px-4 md:px-12 lg:px-20 bg-gradient-to-br from-blue-50 via-cyan-200 to-purple-100 dark:from-gray-900 dark:via-purple-900 dark:to-indigo-800 transition-colors duration-70" >
 
       <div className="max-w-7xl mx-auto flex flex-col gap-12 h-full">
         {/* Header */}
