@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.vite/               # Vite dependency cache
+.env                 # environment variables (if any)
+*.env.local          # local environment files
+coverage/            # if you use testing coverage tools
+*.bak                # backup files

@@ -47,96 +47,86 @@ const HeroImg = () => {
             onClick={() => setIsModalOpen(true)}
             className="
               mt-2 px-5 py-2
-              bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600
-              text-white font-medium text-sm sm:text-base
-              rounded-xl
-              shadow-md
-              hover:shadow-lg hover:scale-105
-              transition-all duration-300
+    bg-gradient-to-r from-slate-600 via-green-200 to-violet-600
+    dark:from-lime-600 dark:via-amber-300 dark:to-green-950
+    text-indigo-600 font-bold text-sm sm:text-base
+    rounded-xl
+    shadow-md
+    hover:shadow-lg hover:scale-105
+    transition-all duration-300
+    cursor-pointer
+    focus:outline-none focus:ring-2 focus:ring-blue-400
+    flex items-center justify-center gap-2
             "
           >
-            Learn more about me
+            About me<span className="text-white text-lg">→</span>
           </button>
         </div>
       </motion.div>
 
       {/* ===== Popup Modal ===== */}
-      <AnimatePresence>
-        {isModalOpen && (
-          <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
-            onClick={() => setIsModalOpen(false)}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              onClick={(e) => e.stopPropagation()}
-              className="
-                relative
-                bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-800
-                border border-gray-300/60 dark:border-gray-700
-                rounded-2xl
-                shadow-2xl
-                p-5 sm:p-6 md:p-8 w-full max-w-sm sm:max-w-md
-                text-center
-              "
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {/* Close Button */}
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="absolute top-3 right-3 text-gray-500 dark:text-gray-300 text-2xl font-bold hover:text-cyan-500"
-              >
-                &times;
-              </button>
+<AnimatePresence>
+  {isModalOpen && (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+      onClick={() => setIsModalOpen(false)}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <motion.div
+        onClick={(e) => e.stopPropagation()}
+        className="
+          relative
+          bg-white/10 dark:bg-gray-500/10
+          backdrop-blur-xl
+          border border-cyan-300 dark:border-red-600/50
+          rounded-2xl
+          shadow-1xl
+          p-6 sm:p-8
+          w-full max-w-sm sm:max-w-md
+          text-center
+        "
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setIsModalOpen(false)}
+          className="absolute top-3 right-3 text-gray-600 dark:text-gray-300 text-2xl font-bold hover:text-cyan-500 transition-colors duration-200"
+        >
+          &times;
+        </button>
 
-              {/* Profile Image inside modal */}
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-cyan-400/70 shadow-lg">
-                <img
-                  src={HeroImage}
-                  alt="Prabhat Prajapati"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+        {/* Profile Image */}
+        <div className="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-cyan-400/50 dark:ring-violet-900 shadow-lg">
+          <img
+            src={HeroImage}
+            alt="Prabhat Prajapati"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-              {/* Title */}
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                About Me
-              </h2>
+        {/* Title */}
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-600 dark:text-amber-500 mb-2">
+          About Me
+        </h2>
 
-              {/* Description */}
-              <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
-                Hi! I'm{" "}
-                <span className="font-semibold text-gray-900 dark:text-white">
-                  Prabhat Prajapati
-                </span>
-                , a passionate developer specializing in{" "}
-                <span className="text-cyan-600 dark:text-cyan-400">
-                  frontend
-                </span>{" "}
-                and{" "}
-                <span className="text-blue-600 dark:text-purple-400">
-                  fullstack
-                </span>{" "}
-                development. I love building modern, responsive, and
-                user-friendly web apps with React, Vite, and the latest tech.
-              </p>
+        {/* Short Description */}
+        <p className="text-amber-400 dark:text-cyan-600 text-sm sm:text-base md:text-base leading-relaxed">
+          I am a <span className="font-semibold"> Java-based Full Stack Developer </span> 
+          working on secure microservices using <span className="font-semibold text-green-700 dark:text-pink-400"> Spring Boot </span>. 
+          I also work with <span className="font-semibold text-cyan-600 dark:text-cyan-400"> React </span> 
+          and <span className="font-semibold text-blue-600 dark:text-purple-400"> Tailwind CSS </span> 
+           to build modern, responsive web apps.
+        </p>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
 
-              {/* Action Button */}
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="mt-5 w-full px-5 py-2 sm:px-6 sm:py-3 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-xl transition-colors font-medium text-gray-700 dark:text-gray-300 text-sm sm:text-base"
-              >
-                Close
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };
