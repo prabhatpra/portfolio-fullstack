@@ -11,7 +11,7 @@ const App = () => {
   
   return (
     <div>
-      <h1 className='text-red-400, font-bold'>Hello worlld</h1>
+      
       <Navbar />
       <Hero />
       <About />
